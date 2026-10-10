@@ -66,7 +66,7 @@
 //! | `debug-plugin`         | Enables physics debug rendering using the [`PhysicsDebugPlugin`]. The plugin must be added separately.                                              | Yes             |
 //! | `enhanced-determinism` | Enables cross-platform deterministic math, improving determinism across architectures at a small performance cost.                                  | No              |
 //! | `parallel`             | Enables some extra multithreading, which improves performance for larger simulations but can add some overhead for smaller ones.                    | Yes             |
-//! | `simd`                 | Enables [SIMD] optimizations.                                                                                                                       | No              |
+//! | `simd`                 | Deprecated. No effect; [SIMD] is now always enabled by default (see: [Parry 0.30.0 changelog]).                                                     | No              |
 //! | `serialize`            | Enables support for serialization and deserialization using Serde.                                                                                  | No              |
 //! | `validate`             | Enables additional correctness checks and validation at the cost of worse performance.                                                              | No              |
 //!
@@ -74,6 +74,7 @@
 //! [physics diagnostics]: diagnostics
 //! [`DiagnosticsStore`]: bevy::diagnostic::DiagnosticsStore
 //! [SIMD]: https://en.wikipedia.org/wiki/Single_instruction,_multiple_data
+//! [Parry 0.30.0 changelog]: https://github.com/dimforge/parry/blob/v0.30.0/CHANGELOG.md#0300
 //!
 //! ## Add the Plugins
 //!
